@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.ScrollBar?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" tabClosingPolicy="UNAVAILABLE" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="pl.gornik.kontrolkifx.Controller">
+  <tabs>
+    <Tab text="Slider">
+      <content>
+        <AnchorPane prefHeight="600.0" prefWidth="900.0">
+               <children>
+                  <SplitPane layoutX="-7.0" layoutY="-42.0" orientation="VERTICAL" prefHeight="200.0" prefWidth="900.0">
+                    <items>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                           <children>
+                              <Slider fx:id="mySlider" layoutX="8.0" layoutY="92.0" majorTickUnit="20.0" max="200.0" minorTickCount="4" prefHeight="38.0" prefWidth="704.0" showTickLabels="true" showTickMarks="true" value="100.0" />
+                              <TextField fx:id="txtSlider" layoutX="670.0" layoutY="144.0" text="50%">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                              </TextField>
+                           </children>
+                        </AnchorPane>
+                    </items>
+                  </SplitPane>
+                  <Circle fx:id="myCircle" fill="DODGERBLUE" layoutX="260.0" layoutY="339.0" radius="100.0" stroke="BLACK" strokeType="INSIDE" />
+               </children></AnchorPane>
+      </content>
+    </Tab>
+    <Tab text="Scroll Bar">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <ScrollBar fx:id="myScroll" layoutX="34.0" layoutY="14.0" max="500.0" orientation="VERTICAL" prefHeight="480.0" prefWidth="14.0" />
+                  <TextField fx:id="txtScroll" layoutX="14.0" layoutY="524.0" prefHeight="42.0" prefWidth="56.0" />
+                  <Rectangle fx:id="myRectangle" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="50.0" layoutX="125.0" layoutY="20.0" stroke="BLACK" strokeType="INSIDE" width="697.0" />
+               </children></AnchorPane>
+      </content>
+    </Tab>
+      <Tab text="Choice Box">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <CheckBox fx:id="chbLeliwa" layoutX="27.0" layoutY="53.0" mnemonicParsing="false" text="Leliwa">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox fx:id="chbFM" layoutX="27.0" layoutY="90.0" mnemonicParsing="false" text="RMF FM">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox fx:id="chbZet" layoutX="27.0" layoutY="125.0" mnemonicParsing="false" text="Radio Zet">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox fx:id="chbMax" layoutX="27.0" layoutY="161.0" mnemonicParsing="false" text="RMF MAX">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </CheckBox>
+                  <Label layoutX="27.0" layoutY="14.0" prefHeight="33.0" prefWidth="187.0" text="Jakiego radia lubisz słuchać?">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <TextArea fx:id="myArea" layoutX="221.0" layoutY="61.0" prefHeight="210.0" prefWidth="220.0" />
+                  <Label layoutX="221.0" layoutY="37.0" text="Text Area">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <ChoiceBox fx:id="myChoice" layoutX="29.0" layoutY="320.0" prefHeight="40.0" prefWidth="150.0" />
+                  <ComboBox fx:id="myCombo" layoutX="227.0" layoutY="320.0" prefHeight="40.0" prefWidth="150.0" />
+                  <Label fx:id="lblChoice" layoutX="29.0" layoutY="290.0" prefHeight="20.0" prefWidth="149.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblCombo" layoutX="227.0" layoutY="290.0" prefHeight="20.0" prefWidth="147.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <ListView fx:id="myList" layoutX="608.0" layoutY="61.0" prefHeight="210.0" prefWidth="220.0" />
+                  <Label layoutX="608.0" layoutY="37.0" text="List View">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </content>
+      </Tab>
+      <Tab text="Spinner">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <Spinner fx:id="spinMin" layoutX="22.0" layoutY="49.0" />
+                  <Spinner fx:id="spinMax" layoutX="22.0" layoutY="122.0" />
+                  <Label layoutX="22.0" layoutY="14.0" text="Podaj zakres minimalny">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="22.0" layoutY="90.0" text="Podaj zakres maksymalny">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblInfo" layoutX="330.0" layoutY="41.0" prefHeight="27.0" prefWidth="443.0" text="Losowanie liczb z zakresu 100 do 500">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="330.0" layoutY="92.0" text="Wylosowana liczba:">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblRandom" layoutX="473.0" layoutY="84.0" prefHeight="37.0" prefWidth="50.0" />
+               </children>
+            </AnchorPane>
+         </content>
+      </Tab>
+  </tabs>
+</TabPane>
